@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>三興オート株式会社｜京都市上京区のカーライフサポート</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", Arial, sans-serif; color: #1f2937; background: #f6f7f9; line-height: 1.8; }
+    a { color: inherit; text-decoration: none; }
+    header { background: #111827; color: white; padding: 18px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 10; }
+    .logo { font-size: 22px; font-weight: 800; letter-spacing: .08em; }
+    nav a { margin-left: 22px; font-size: 14px; opacity: .9; }
+    .hero { background: linear-gradient(rgba(17,24,39,.76), rgba(17,24,39,.76)), url('https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1600&q=80') center/cover; color: white; padding: 110px 8% 90px; }
+    .hero small { display: inline-block; background: #dc2626; padding: 5px 14px; border-radius: 999px; font-weight: 700; margin-bottom: 18px; }
+    .hero h1 { font-size: clamp(34px, 5vw, 58px); line-height: 1.25; margin: 0 0 18px; }
+    .hero p { max-width: 720px; font-size: 18px; opacity: .95; }
+    .btns { margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn { padding: 12px 22px; border-radius: 8px; font-weight: 700; display: inline-block; }
+    .btn.red { background: #dc2626; color: white; }
+    .btn.white { background: white; color: #111827; }
+    section { padding: 70px 8%; }
+    .notice { background: white; margin: -36px 8% 0; padding: 28px; border-left: 6px solid #dc2626; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.08); position: relative; }
+    .notice h2 { margin: 0 0 8px; color: #991b1b; }
+    .title { text-align: center; margin-bottom: 38px; }
+    .title h2 { font-size: 32px; margin: 0; }
+    .title p { color: #6b7280; margin: 8px 0 0; }
+    .cards { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+    .card { background: white; padding: 26px 22px; border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,.06); }
+    .card h3 { margin-top: 0; color: #111827; font-size: 20px; }
+    .card span { font-size: 34px; }
+    .about { display: grid; grid-template-columns: 1.2fr .8fr; gap: 34px; align-items: center; }
+    .about-box { background: #111827; color: white; padding: 34px; border-radius: 16px; }
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 14px; overflow: hidden; }
+    th, td { padding: 16px; border-bottom: 1px solid #e5e7eb; text-align: left; }
+    th { width: 30%; background: #f3f4f6; }
+    .contact { background: #111827; color: white; text-align: center; }
+    .contact h2 { font-size: 34px; margin-top: 0; }
+    .tel { font-size: 34px; font-weight: 800; margin: 10px 0; color: #fff; }
+    footer { background: #0b1020; color: #9ca3af; text-align: center; padding: 24px; font-size: 13px; }
+    @media (max-width: 900px) { header { display: block; } nav { margin-top: 10px; } nav a { margin: 0 12px 0 0; } .cards { grid-template-columns: 1fr 1fr; } .about { grid-template-columns: 1fr; } }
+    @media (max-width: 560px) { .cards { grid-template-columns: 1fr; } .hero { padding: 80px 6%; } section, header { padding-left: 6%; padding-right: 6%; } .notice { margin-left: 6%; margin-right: 6%; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">三興オート株式会社</div>
+    <nav>
+      <a href="#service">サービス</a>
+      <a href="#about">会社概要</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <small>京都市上京区のカーライフサポート</small>
+      <h1>車のことなら、<br>三興オートへ。</h1>
+      <p>車検・整備、車両販売、カーリース、自動車保険、カッティング施工まで。お客様のカーライフを幅広くサポートいたします。</p>
+      <div class="btns">
+        <a class="btn red" href="#contact">お問い合わせする</a>
+        <a class="btn white" href="#service">サービスを見る</a>
+      </div>
+    </div>
+
+    <div class="notice">
+      <h2>事務所・店舗移転のお知らせ</h2>
+      <p>平素より三興オート株式会社をご利用いただき、誠にありがとうございます。このたび弊社は、下記住所へ事務所・店舗を移転いたしました。新店舗でも、これまで以上に安心してご利用いただけるサービスをご提供してまいります。</p>
+    </div>
+
+    <section id="service">
+      <div class="title">
+        <h2>サービス内容</h2>
+        <p>車に関するご相談をまとめてサポートします。</p>
+      </div>
+      <div class="cards">
+        <div class="card"><span>🔧</span><h3>車検・整備</h3><p>点検、整備、修理など安全な走行を支えるメンテナンスに対応します。</p></div>
+        <div class="card"><span>🚗</span><h3>車両販売</h3><p>新車・中古車のご相談から購入後のサポートまでお任せください。</p></div>
+        <div class="card"><span>📄</span><h3>カーリース</h3><p>法人・個人のお客様に合わせたカーリースをご提案します。</p></div>
+        <div class="card"><span>🛡️</span><h3>自動車保険</h3><p>万が一に備えた保険のご相談も承ります。</p></div>
+        <div class="card"><span>✂️</span><h3>カッティング</h3><p>社名ステッカー、看板、車両マーキングなどの制作に対応します。</p></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about">
+        <div>
+          <div class="title" style="text-align:left;margin-bottom:22px;">
+            <h2>三興オートについて</h2>
+            <p>地域に根ざした自動車サービス会社です。</p>
+          </div>
+          <p>京都市上京区で、自動車整備・販売を中心に、保険、リース、カッティング施工まで幅広く対応しています。お客様に安心して車をご利用いただけるよう、丁寧でわかりやすい対応を大切にしています。</p>
+        </div>
+        <div class="about-box">
+          <h3>こんな方におすすめ</h3>
+          <p>・車検や整備を相談したい<br>・車を購入、リースしたい<br>・社用車の管理を任せたい<br>・車両や看板に文字を入れたい</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="title">
+        <h2>会社概要</h2>
+      </div>
+      <table>
+        <tr><th>会社名</th><td>三興オート株式会社</td></tr>
+        <tr><th>所在地</th><td>〒602-8221 京都府京都市上京区西堀川通元誓願寺下ル堀川上之町839</td></tr>
+        <tr><th>電話番号</th><td>075-431-4331</td></tr>
+        <tr><th>事業内容</th><td>車検・整備、車両販売、カーリース、自動車保険、カッティング施工</td></tr>
+      </table>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>お問い合わせ</h2>
+      <p>車の整備・販売・リース・保険・カッティングのご相談はこちら</p>
+      <div class="tel">075-431-4331</div>
+      <p>営業時間・定休日は確認のうえ掲載してください。</p>
+    </section>
+  </main>
+
+  <footer>
+    © 三興オート株式会社 All Rights Reserved.
+  </footer>
+</body>
+</html>
