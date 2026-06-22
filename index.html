@@ -115,7 +115,29 @@
       </table>
     </section>
 
-    <section id="contact" class="contact">
+    <section .contact {
+    position: relative;
+    overflow: hidden;
+    background: #07152b;
+}
+
+.contact::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:url("main-logo.png") center center no-repeat;
+
+    background-size:70%;
+    opacity:0.06;
+
+    z-index:0;
+}
+
+.contact *{
+    position:relative;
+    z-index:1;
+}id="contact" class="contact">
       <h2>お問い合わせ</h2>
       <p>車の整備・販売・リース・保険・カッティングのご相談はこちら</p>
       <div class="tel">075-431-4331</div>
