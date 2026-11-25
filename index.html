@@ -40,7 +40,28 @@
     footer { background: #0b1020; color: #9ca3af; text-align: center; padding: 24px; font-size: 13px; }
     @media (max-width: 900px) { header { display: block; } nav { margin-top: 10px; } nav a { margin: 0 12px 0 0; } .cards { grid-template-columns: 1fr 1fr; } .about { grid-template-columns: 1fr; } }
     @media (max-width: 560px) { .cards { grid-template-columns: 1fr; } .hero { padding: 80px 6%; } section, header { padding-left: 6%; padding-right: 6%; } .notice { margin-left: 6%; margin-right: 6%; } }
-  </style>
+  
+.contact {
+    position: relative;
+    overflow: hidden;
+    background: #07152b;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("main-logo.png") center center no-repeat;
+    background-size: 70%;
+    opacity: 0.06;
+    z-index: 0;
+}
+
+.contact * {
+    position: relative;
+    z-index: 1;
+}
+</style>
 </head>
 <body>
   <header>
@@ -115,35 +136,27 @@
       </table>
     </section>
 
-    <section .contact {
-    position: relative;
-    overflow: hidden;
-    background: #07152b;
-}
+   
+<section id="contact" class="contact">
+    <h2>お問い合わせ</h2>
+    <p>車の整備・販売・リース・保険・カッティングのご相談はこちら</p>
 
-.contact::before{
-    content:"";
-    position:absolute;
-    inset:0;
+    <div class="tel">
+        <a href="tel:0754314331">075-431-4331</a>
+    </div>
 
-    background:url("main-logo.png") center center no-repeat;
+    <p>
+        <strong>営業時間</strong><br>
+        平日　9:00〜17:30<br>
+        土曜　9:00〜17:00
+    </p>
 
-    background-size:70%;
-    opacity:0.06;
+    <p>
+        <strong>定休日</strong><br>
+        第2・第4土曜日、日曜日、祝日
+    </p>
+</section>
 
-    z-index:0;
-}
-
-.contact *{
-    position:relative;
-    z-index:1;
-}id="contact" class="contact">
-      <h2>お問い合わせ</h2>
-      <p>車の整備・販売・リース・保険・カッティングのご相談はこちら</p>
-      <div class="tel">075-431-4331</div>
-      <p>営業時間 9:00~17:30<br>
-      定休日 第２第４土曜日・日曜日・祝日</p>
-    </section>
   </main>
 
   <footer>
